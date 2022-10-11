@@ -1,0 +1,214 @@
+
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext._application:Application started
+ERROR:telegram.ext._application:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_application.py", line 1002, in process_update
+    await coroutine
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 818, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_handler.py", line 137, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\bot_command.py", line 50, in do_selection
+    YouTube("url").streams.filter(only_audio=True).first().download()
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\__main__.py", line 71, in __init__
+    self.video_id = extract.video_id(url)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\extract.py", line 133, in video_id
+    return regex_search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url, group=1)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\helpers.py", line 129, in regex_search
+    raise RegexMatchError(caller="regex_search", pattern=pattern)
+pytube.exceptions.RegexMatchError: regex_search: could not find match for (?:v=|\/)([0-9A-Za-z_-]{11}).*
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext._application:Application started
+ERROR:telegram.ext._application:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_application.py", line 1002, in process_update
+    await coroutine
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 818, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_handler.py", line 137, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\bot_command.py", line 47, in do_selection
+    video1280 = YouTube("url").streams.filter(res='1080p').desc().first()
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\__main__.py", line 71, in __init__
+    self.video_id = extract.video_id(url)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\extract.py", line 133, in video_id
+    return regex_search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url, group=1)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\helpers.py", line 129, in regex_search
+    raise RegexMatchError(caller="regex_search", pattern=pattern)
+pytube.exceptions.RegexMatchError: regex_search: could not find match for (?:v=|\/)([0-9A-Za-z_-]{11}).*
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext._application:Application started
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext._application:Application started
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext._application:Application started
+ERROR:telegram.ext._application:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_application.py", line 1002, in process_update
+    await coroutine
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 818, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_handler.py", line 137, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\bot_command.py", line 48, in download_video
+    YouTube(url).streams.filter(only_audio=True,file_extension='mp3').first().download()
+AttributeError: 'NoneType' object has no attribute 'download'
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext._application:Application started
+ERROR:telegram.ext._application:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 591, in _read_chunked
+    value.append(self._safe_read(chunk_left))
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 632, in _safe_read
+    raise IncompleteRead(data, amt-len(data))
+http.client.IncompleteRead: IncompleteRead(10566 bytes read, 22202 more expected)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_application.py", line 1002, in process_update
+    await coroutine
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 818, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_handler.py", line 137, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\bot_command.py", line 42, in download_video
+    video480  = YouTube(url).streams.filter(res='480p').desc().first()
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\__main__.py", line 296, in streams
+    return StreamQuery(self.fmt_streams)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\__main__.py", line 176, in fmt_streams
+    stream_manifest = extract.apply_descrambler(self.streaming_data)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\__main__.py", line 157, in streaming_data
+    if 'streamingData' in self.vid_info:
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\__main__.py", line 246, in vid_info
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\innertube.py", line 300, in player
+    return self._call_api(endpoint, query, self.base_data)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\innertube.py", line 248, in _call_api
+    return json.loads(response.read())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 459, in read
+    return self._read_chunked(amt)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 597, in _read_chunked
+    raise IncompleteRead(b''.join(value))
+http.client.IncompleteRead: IncompleteRead(0 bytes read)
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext._application:Application started
+ERROR:telegram.ext._application:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 591, in _read_chunked
+    value.append(self._safe_read(chunk_left))
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 632, in _safe_read
+    raise IncompleteRead(data, amt-len(data))
+http.client.IncompleteRead: IncompleteRead(10566 bytes read, 22202 more expected)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_application.py", line 1002, in process_update
+    await coroutine
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 818, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_handler.py", line 137, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\bot_command.py", line 42, in download_video
+    video480  = YouTube(url).streams.filter(res='480p').desc().first()
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\__main__.py", line 296, in streams
+    return StreamQuery(self.fmt_streams)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\__main__.py", line 176, in fmt_streams
+    stream_manifest = extract.apply_descrambler(self.streaming_data)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\__main__.py", line 157, in streaming_data
+    if 'streamingData' in self.vid_info:
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\__main__.py", line 246, in vid_info
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\innertube.py", line 300, in player
+    return self._call_api(endpoint, query, self.base_data)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\innertube.py", line 248, in _call_api
+    return json.loads(response.read())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 459, in read
+    return self._read_chunked(amt)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 597, in _read_chunked
+    raise IncompleteRead(b''.join(value))
+http.client.IncompleteRead: IncompleteRead(0 bytes read)
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext._application:Application started
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext._application:Application started
+ERROR:telegram.ext._application:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_application.py", line 1002, in process_update
+    await coroutine
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 818, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\telegram\ext\_handler.py", line 137, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\bot_command.py", line 43, in download_video
+    video480.download()
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\streams.py", line 247, in download
+    bytes_remaining = self.filesize
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\streams.py", line 146, in filesize
+    self._filesize = request.filesize(self.url)
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\request.py", line 200, in filesize
+    return int(head(url)["content-length"])
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\request.py", line 264, in head
+    response_headers = _execute_request(url, method="HEAD").info()
+  File "C:\Users\Valentina\Documents\Stud Progr\7_Python\DZ\DZ_11\ytub_grab\.venv\lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 557, in error
+    result = self._call_chain(*args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2032.0_x64__qbz5n2kfra8p0\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 503: Service Unavailable
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext._application:Application started
+INFO:telegram.ext._application:Application is stopping. This might take a moment.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:telegram.ext._application:Application.stop() complete
